@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:scholix="http://www.scholix.org"
+    elementFormDefault="qualified" targetNamespace="http://www.scholix.org">
+    <xs:element name="link" type="scholix:linkType">
+        <xs:annotation>
+            <xs:documentation>
+                The Scholix metadata schema is a set of properties describing a Link Information Package, which carries information about a link between two scholarly communication objects
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+
+    <xs:complexType name="linkType">
+        <xs:sequence>
+            <xs:element minOccurs="1" maxOccurs="1" name="publicationDate" type="xs:date">
+                <xs:annotation>
+                    <xs:documentation>
+                    date of formal issuance (e.g., publication) of the resource
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+
+            <xs:element minOccurs="1" maxOccurs="1" name="publisher" type="scholix:providerType">
+                <xs:annotation>
+                    <xs:documentation>
+                        An entity responsible for making the link available
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element minOccurs="0" maxOccurs="1" name="linkProvider" type="scholix:providerType">
+                <xs:annotation>
+                    <xs:documentation>
+                        An entity responsible for making this record available online
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="relashionship" type="scholix:relationshipType" minOccurs="0"
+                maxOccurs="unbounded"/>
+            <xs:element minOccurs="1" maxOccurs="1" name="source" type="scholix:elementType"/>
+            <xs:element minOccurs="1" maxOccurs="1" name="target" type="scholix:elementType"/>
+        </xs:sequence>
+    </xs:complexType>
+
+
+    <xs:complexType name="relationshipType">
+
+        <xs:sequence>
+            <xs:element name="name" minOccurs="1" maxOccurs="1" type="xs:string"/>
+            <xs:element name="schema" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
+            <xs:element name="inverseRelashionship" minOccurs="0" maxOccurs="1" type="xs:string"/>
+        </xs:sequence>
+
+    </xs:complexType>
+
+    <xs:complexType name="providerType">
+
+        <xs:sequence>
+            <xs:element name="name" minOccurs="1" maxOccurs="1" type="xs:string"/>
+            <xs:element name="identifier" minOccurs="0" maxOccurs="unbounded"
+                type="scholix:identifierType"/>
+        </xs:sequence>
+
+    </xs:complexType>
+
+    <xs:complexType name="elementType">
+
+        <xs:sequence>
+            <xs:element name="identifier" minOccurs="1" maxOccurs="unbounded"
+                type="scholix:identifierType"/>
+            <xs:element name="objectType" minOccurs="1" maxOccurs="1" type="xs:string"/>
+            <xs:element name="objectSubType" minOccurs="0" maxOccurs="1" type="xs:string"/>
+            <xs:element name="title" minOccurs="0" maxOccurs="1" type="xs:string"/>
+            <xs:element name="creator" minOccurs="0" maxOccurs="unbounded"
+                type="scholix:creatorType"/>
+            <xs:element minOccurs="1" maxOccurs="1" name="publicationDate" type="xs:date">
+                <xs:annotation>
+                    <xs:documentation>
+                        date of formal issuance (e.g., publication) of the resource
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+
+            <xs:element minOccurs="1" maxOccurs="1" name="publisher" type="scholix:providerType">
+                <xs:annotation>
+                    <xs:documentation>
+                        An entity responsible for making the object available
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+
+
+    </xs:complexType>
+
+
+
+    <xs:complexType name="creatorType">
+        <xs:sequence>
+            <xs:element name="fullname" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="firstName" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="secondName" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="identifier" type="scholix:identifierType" minOccurs="0" maxOccurs="1"
+            />
+        </xs:sequence>
+
+    </xs:complexType>
+
+
+
+    <xs:complexType name="identifierType">
+        <xs:sequence>
+            <xs:element name="identifier" type="xs:string" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="schema" type="xs:string" minOccurs="1" maxOccurs="1"/>
+
+        </xs:sequence>
+    </xs:complexType>
+
+
+
+</xs:schema>
