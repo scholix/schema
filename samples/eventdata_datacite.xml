@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<event>
+  <subj_id>https://doi.org/10.5517/CCZ3HM5</subj_id>
+  <obj_id>https://doi.org/10.1016/J.MOLSTRUC.2015.03.029</obj_id>
+  <relation_type_id>is_supplement_to</relation_type_id>
+  <source_id>datacite_crossref</source_id>
+  <publisher_id>BL.CCDC</publisher_id>
+  <subj>
+    <pid>https://doi.org/10.5517/CCZ3HM5</pid>
+    <DOI>10.5517/CCZ3HM5</DOI>
+    <author>
+      <family>Zhang</family>
+      <given>Huan</given>
+    </author>
+    <author>
+      <family>Jin</family>
+      <given>Shouwen</given>
+    </author>
+    <author>
+      <family>Wen</family>
+      <given>Xianhong</given>
+    </author>
+    <author>
+      <family>Liu</family>
+      <given>Bin</given>
+    </author>
+    <author>
+      <family>Fang</family>
+      <given>Yang</given>
+    </author>
+    <author>
+      <family>Zhang</family>
+      <given>Yani</given>
+    </author>
+    <author>
+      <family>Wang</family>
+      <given>Daqi</given>
+    </author>
+    <title>CCDC 897097: Experimental Crystal Structure Determination </title>
+    <container-title>Cambridge Crystallographic Data Centre</container-title>
+    <published>2015</published>
+    <issued>2015-04-01T04:32:34Z</issued>
+    <publisher_id>BL.CCDC</publisher_id>
+    <registration_agency_id>datacite</registration_agency_id>
+    <tracked>true</tracked>
+    <type />
+  </subj>
+  <obj />
+  <message_type>relation</message_type>
+  <prefix>10.5517</prefix>
+  <source_token>24d449af-2461-4e91-a191-6fa4dd8a6367</source_token>
+  <callback>http://localhost:8040/api/callbacks</callback>
+</event>
