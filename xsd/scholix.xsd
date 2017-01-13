@@ -33,7 +33,7 @@
                     </xs:documentation>
                 </xs:annotation>
             </xs:element>
-            <xs:element name="relationship" type="scholix:relationshipType" minOccurs="0"
+            <xs:element name="relashionship" type="scholix:relationshipType" minOccurs="0"
                 maxOccurs="unbounded"/>
             <xs:element minOccurs="1" maxOccurs="1" name="source" type="scholix:elementType"/>
             <xs:element minOccurs="1" maxOccurs="1" name="target" type="scholix:elementType"/>
@@ -45,8 +45,8 @@
         
         <xs:sequence>
             <xs:element name="name" minOccurs="1" maxOccurs="1" type="xs:string"/>
-            <xs:element name="schema" minOccurs="0" maxOccurs="1" type="xs:string"/>
-            <xs:element name="inverseRelationship" minOccurs="0" maxOccurs="1" type="xs:string"/>
+            <xs:element name="schema" minOccurs="1" maxOccurs="1" type="xs:string"/>
+            <xs:element name="inverseRelashionship" minOccurs="0" maxOccurs="1" type="xs:string"/>
         </xs:sequence>
         
     </xs:complexType>
@@ -55,8 +55,18 @@
         
         <xs:sequence>
             <xs:element name="name" minOccurs="1" maxOccurs="1" type="xs:string"/>
-            <xs:element name="identifier" minOccurs="0" maxOccurs="unbounded"
+            <xs:element name="identifiers" minOccurs="0" maxOccurs="unbounded"
                 type="scholix:identifierType"/>
+        </xs:sequence>
+        
+    </xs:complexType>
+    
+    
+    <xs:complexType name="objectType">
+        
+        <xs:sequence>
+            <xs:element name="type" minOccurs="1" maxOccurs="1" type="xs:string"/>
+            <xs:element name="subType" minOccurs="0" maxOccurs="1" type="xs:string"/>
         </xs:sequence>
         
     </xs:complexType>
@@ -64,14 +74,12 @@
     <xs:complexType name="elementType">
         
         <xs:sequence>
-            <xs:element name="identifier" minOccurs="1" maxOccurs="unbounded"
-                type="scholix:identifierType"/>
-            <xs:element name="objectType" minOccurs="1" maxOccurs="1" type="xs:string"/>
-            <xs:element name="objectSubType" minOccurs="0" maxOccurs="1" type="xs:string"/>
+            <xs:element name="identifier" minOccurs="1" maxOccurs="1" type="scholix:identifierType"/>
+            <xs:element name="objectType" minOccurs="1" maxOccurs="1" type="scholix:objectType"/>            
             <xs:element name="title" minOccurs="0" maxOccurs="1" type="xs:string"/>
             <xs:element name="creator" minOccurs="0" maxOccurs="unbounded"
                 type="scholix:creatorType"/>
-            <xs:element minOccurs="1" maxOccurs="1" name="publicationDate" type="xs:date">
+            <xs:element minOccurs="0" maxOccurs="1" name="publicationDate" type="xs:date">
                 <xs:annotation>
                     <xs:documentation>
                         date of formal issuance (e.g., publication) of the resource
@@ -95,9 +103,8 @@
     
     <xs:complexType name="creatorType">
         <xs:sequence>
-            <xs:element name="name" type="xs:string" minOccurs="1" maxOccurs="1"/>            
-            <xs:element name="identifier" type="scholix:identifierType" minOccurs="0" maxOccurs="1"
-            />
+            <xs:element name="creatorName" type="xs:string" minOccurs="1" maxOccurs="1"/>            
+            <xs:element name="identifiers" type="scholix:identifierType" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
         
     </xs:complexType>
