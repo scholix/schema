@@ -8,7 +8,7 @@
             </xs:documentation>
         </xs:annotation>
     </xs:element>
-    
+
     <xs:complexType name="linkType">
         <xs:sequence>
             <xs:element minOccurs="1" maxOccurs="1" name="publicationDate" type="xs:date">
@@ -18,7 +18,7 @@
                     </xs:documentation>
                 </xs:annotation>
             </xs:element>
-            
+
             <xs:element minOccurs="1" maxOccurs="1" name="publisher" type="scholix:providerType">
                 <xs:annotation>
                     <xs:documentation>
@@ -33,49 +33,49 @@
                     </xs:documentation>
                 </xs:annotation>
             </xs:element>
-            <xs:element name="relashionship" type="scholix:relationshipType" minOccurs="0"
+            <xs:element name="relationship" type="scholix:relationshipType" minOccurs="0"
                 maxOccurs="unbounded"/>
             <xs:element minOccurs="1" maxOccurs="1" name="source" type="scholix:elementType"/>
             <xs:element minOccurs="1" maxOccurs="1" name="target" type="scholix:elementType"/>
         </xs:sequence>
     </xs:complexType>
-    
-    
+
+
     <xs:complexType name="relationshipType">
-        
+
         <xs:sequence>
             <xs:element name="name" minOccurs="1" maxOccurs="1" type="xs:string"/>
             <xs:element name="schema" minOccurs="1" maxOccurs="1" type="xs:string"/>
-            <xs:element name="inverseRelashionship" minOccurs="0" maxOccurs="1" type="xs:string"/>
+            <xs:element name="inverseRelationship" minOccurs="0" maxOccurs="1" type="xs:string"/>
         </xs:sequence>
-        
+
     </xs:complexType>
-    
+
     <xs:complexType name="providerType">
-        
+
         <xs:sequence>
             <xs:element name="name" minOccurs="1" maxOccurs="1" type="xs:string"/>
             <xs:element name="identifiers" minOccurs="0" maxOccurs="unbounded"
                 type="scholix:identifierType"/>
         </xs:sequence>
-        
+
     </xs:complexType>
-    
-    
+
+
     <xs:complexType name="objectType">
-        
+
         <xs:sequence>
             <xs:element name="type" minOccurs="1" maxOccurs="1" type="xs:string"/>
             <xs:element name="subType" minOccurs="0" maxOccurs="1" type="xs:string"/>
         </xs:sequence>
-        
+
     </xs:complexType>
-    
+
     <xs:complexType name="elementType">
-        
+
         <xs:sequence>
             <xs:element name="identifier" minOccurs="1" maxOccurs="1" type="scholix:identifierType"/>
-            <xs:element name="objectType" minOccurs="1" maxOccurs="1" type="scholix:objectType"/>            
+            <xs:element name="objectType" minOccurs="1" maxOccurs="1" type="scholix:objectType"/>
             <xs:element name="title" minOccurs="0" maxOccurs="1" type="xs:string"/>
             <xs:element name="creator" minOccurs="0" maxOccurs="unbounded"
                 type="scholix:creatorType"/>
@@ -86,7 +86,7 @@
                     </xs:documentation>
                 </xs:annotation>
             </xs:element>
-            
+
             <xs:element minOccurs="0" maxOccurs="1" name="publisher" type="scholix:providerType">
                 <xs:annotation>
                     <xs:documentation>
@@ -95,30 +95,30 @@
                 </xs:annotation>
             </xs:element>
         </xs:sequence>
-        
-        
+
+
     </xs:complexType>
-    
-    
-    
+
+
+
     <xs:complexType name="creatorType">
         <xs:sequence>
-            <xs:element name="creatorName" type="xs:string" minOccurs="1" maxOccurs="1"/>            
+            <xs:element name="creatorName" type="xs:string" minOccurs="1" maxOccurs="1"/>
             <xs:element name="identifiers" type="scholix:identifierType" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
-        
+
     </xs:complexType>
-    
-    
-    
+
+
+
     <xs:complexType name="identifierType">
         <xs:sequence>
             <xs:element name="identifier" type="xs:string" minOccurs="1" maxOccurs="1"/>
             <xs:element name="schema" type="xs:string" minOccurs="1" maxOccurs="1"/>
-            
+
         </xs:sequence>
     </xs:complexType>
-    
-    
-    
+
+
+
 </xs:schema>
