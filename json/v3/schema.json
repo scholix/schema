@@ -1,0 +1,637 @@
+{
+  "definitions": {}, 
+  "$schema": "http://json-schema.org/draft-06/schema#", 
+  "$id": "http://www.scholix.org/schema.json", 
+  "type": "object", 
+  "properties": {
+    "LinkPublicationDate": {
+      "$id": "/properties/LinkPublicationDate", 
+      "type": "string", 
+      "title": "The Linkpublicationdate Schema.", 
+      "description": "Date when  this Link Information Package was first  formally issued from this current Provider", 
+      "default": "", 
+      "examples": [
+        "1997-10-23"
+      ]
+    }, 
+    "LinkProvider": {
+      "$id": "/properties/LinkProvider", 
+      "type": "array",
+      "description": "The source(s) of this Link Information Package",  
+      "items": {
+        "$id": "/properties/LinkProvider/items", 
+        "type": "object", 
+        "properties": {
+          "name": {
+            "$id": "/properties/LinkProvider/items/properties/name", 
+            "type": "string", 
+            "title": "The LinkProvider Name .", 
+            "description": "An explanation about the purpose of this instance.", 
+            "default": "", 
+            "examples": [
+              "Datasets in Datacite"
+            ]
+          }, 
+          "identifier": {
+            "$id": "/properties/LinkProvider/items/properties/identifier", 
+            "type": "array", 
+            "items": {
+              "$id": "/properties/LinkProvider/items/properties/identifier/items", 
+              "type": "object", 
+              "properties": {
+                "ID": {
+                  "$id": "/properties/LinkProvider/items/properties/identifier/items/properties/ID", 
+                  "type": "string", 
+                  "title": "The Id Schema.", 
+                  "description": "An explanation about the purpose of this instance.", 
+                  "default": "", 
+                  "examples": [
+                    "475826.a"
+                  ]
+                }, 
+                "IDScheme": {
+                  "$id": "/properties/LinkProvider/items/properties/identifier/items/properties/IDScheme", 
+                  "type": "string", 
+                  "title": "The Idscheme Schema.", 
+                  "description": "An explanation about the purpose of this instance.", 
+                  "default": "", 
+                  "examples": [
+                    "grid"
+                  ]
+                }, 
+                "IDURL": {
+                  "$id": "/properties/LinkProvider/items/properties/identifier/items/properties/IDURL", 
+                  "type": "string", 
+                  "title": "The Idurl Schema.", 
+                  "description": "An explanation about the purpose of this instance.", 
+                  "default": "", 
+                  "examples": [
+                    "https://grid.ac/institutes/grid.475826.a"
+                  ]
+                }
+              }, 
+              "required": [
+                "ID", 
+                "IDScheme"
+              ]
+            }
+          }
+        }, 
+        "required": [
+          "name"
+        ]
+      }
+    }, 
+    "RelationshipType": {
+      "$id": "/properties/RelationshipType", 
+      "type": "object", 
+      "properties": {
+        "Name": {
+          "$id": "/properties/RelationshipType/properties/Name", 
+          "type": "string", 
+          "enum": [
+            "IsSupplementTo", 
+            "IsSupplementedBy", 
+            "References", 
+            "IsReferencedBy", 
+            "IsRelatedTo"
+          ], 
+          "title": "The Name Schema.", 
+          "description": "An explanation about the purpose of this instance.", 
+          "default": "", 
+          "examples": [
+            "IsRelatedTo"
+          ]
+        }, 
+        "SubType": {
+          "$id": "/properties/RelationshipType/properties/SubType", 
+          "type": "string", 
+          "title": "The Subtype Schema.", 
+          "description": "An explanation about the purpose of this instance.", 
+          "default": "", 
+          "examples": [
+            "isPreviousVersionOf"
+          ]
+        }, 
+        "SubTypeSchema": {
+          "$id": "/properties/RelationshipType/properties/SubTypeSchema", 
+          "type": "string", 
+          "title": "The Subtypeschema Schema.", 
+          "description": "An explanation about the purpose of this instance.", 
+          "default": "", 
+          "examples": [
+            "https://schema.datacite.org/meta/kernel-4.0/metadata.xsd"
+          ]
+        }
+      }, 
+      "required": [
+        "Name"
+      ]
+    }, 
+    "LicenseURL": {
+      "$id": "/properties/LicenseURL", 
+      "type": "string", 
+      "title": "The Licenseurl Schema.", 
+      "description": "An explanation about the purpose of this instance.", 
+      "default": "", 
+      "examples": [
+        "http://creativecommons.org/publicdomain/zero/1.0"
+      ]
+    }, 
+    "Source": {
+      "$id": "/properties/Source", 
+      "type": "object", 
+      "properties": {
+        "Identifier": {
+          "$id": "/properties/Source/properties/Identifier", 
+          "type": "object", 
+          "properties": {
+            "ID": {
+              "$id": "/properties/Source/properties/Identifier/properties/ID", 
+              "type": "string", 
+              "title": "The Id Schema.", 
+              "description": "An explanation about the purpose of this instance.", 
+              "default": "", 
+              "examples": [
+                "10.1016/j.ijmedinf.2009.08.006"
+              ]
+            }, 
+            "IDScheme": {
+              "$id": "/properties/Source/properties/Identifier/properties/IDScheme", 
+              "type": "string", 
+              "title": "The Idscheme Schema.", 
+              "description": "An explanation about the purpose of this instance.", 
+              "default": "", 
+              "examples": [
+                "doi"
+              ]
+            }, 
+            "IDURL": {
+              "$id": "/properties/Source/properties/Identifier/properties/IDURL", 
+              "type": "string", 
+              "title": "The Idurl Schema.", 
+              "description": "An explanation about the purpose of this instance.", 
+              "default": "", 
+              "examples": [
+                "https://www.ncbi.nlm.nih.gov/pubmed/19783203"
+              ]
+            }
+          }, 
+          "required": [
+            "ID", 
+            "IDScheme"
+          ]
+        }, 
+        "Type": {
+          "$id": "/properties/Source/properties/Type", 
+          "type": "object", 
+          "properties": {
+            "Name": {
+              "$id": "/properties/Source/properties/Type/properties/Name", 
+              "type": "string", 
+              "enum": [
+                "literature", 
+                "dataset",
+                "unknwon"
+              ], 
+              "title": "The Name Schema.", 
+              "description": "An explanation about the purpose of this instance.", 
+              "default": "", 
+              "examples": [
+                "publication"
+              ]
+            }, 
+            "SubType": {
+              "$id": "/properties/Source/properties/Type/properties/SubType", 
+              "type": "string", 
+              "title": "The Subtype Schema.", 
+              "description": "An explanation about the purpose of this instance.", 
+              "default": "", 
+              "examples": [
+                "journal article"
+              ]
+            }, 
+            "SubTypeSchema": {
+              "$id": "/properties/Source/properties/Type/properties/SubTypeSchema", 
+              "type": "string", 
+              "title": "The Subtypeschema Schema.", 
+              "description": "An explanation about the purpose of this instance.", 
+              "default": "", 
+              "examples": [
+                "CASRAI"
+              ]
+            }
+          }, 
+          "required": [
+            "Name"
+          ]
+        }, 
+        "Title": {
+          "$id": "/properties/Source/properties/Title", 
+          "type": "array", 
+          "items": {
+            "$id": "/properties/Target/properties/Title/items", 
+            "type": "string", 
+            "title": "The 0 Schema.", 
+            "description": "An explanation about the purpose of this instance.", 
+            "default": "", 
+            "examples": [
+              "A Title"
+            ]
+          }
+        }, 
+        "Creator": {
+          "$id": "/properties/Source/properties/Creator", 
+          "type": "array", 
+          "items": {
+            "$id": "/properties/Source/properties/Creator/items", 
+            "type": "object", 
+            "properties": {
+              "Name": {
+                "$id": "/properties/Source/properties/Creator/items/properties/Name", 
+                "type": "string", 
+                "title": "The Name Schema.", 
+                "description": "An explanation about the purpose of this instance.", 
+                "default": "", 
+                "examples": [
+                  "Dr Sandro"
+                ]
+              }, 
+              "Identifier": {
+                "$id": "/properties/Source/properties/Creator/items/properties/Identifier", 
+                "type": "object", 
+                "properties": {
+                  "ID": {
+                    "$id": "/properties/Source/properties/Creator/items/properties/Identifier/properties/ID", 
+                    "type": "string", 
+                    "title": "The Id Schema.", 
+                    "description": "An explanation about the purpose of this instance.", 
+                    "default": "", 
+                    "examples": [
+                      "10.1016/j.ijmedinf.2009.08.006"
+                    ]
+                  }, 
+                  "IDScheme": {
+                    "$id": "/properties/Source/properties/Creator/items/properties/Identifier/properties/IDScheme", 
+                    "type": "string", 
+                    "title": "The Idscheme Schema.", 
+                    "description": "An explanation about the purpose of this instance.", 
+                    "default": "", 
+                    "examples": [
+                      "doi"
+                    ]
+                  }, 
+                  "IDURL": {
+                    "$id": "/properties/Source/properties/Creator/items/properties/Identifier/properties/IDURL", 
+                    "type": "string", 
+                    "title": "The Idurl Schema.", 
+                    "description": "An explanation about the purpose of this instance.", 
+                    "default": "", 
+                    "examples": [
+                      "https://www.ncbi.nlm.nih.gov/pubmed/19783203"
+                    ]
+                  }
+                }, 
+                "required": [
+                  "ID", 
+                  "IDScheme"
+                ]
+              }
+            }, 
+            "required": [
+              "Name"
+            ]
+          }
+        }, 
+        "PublicationDate": {
+          "$id": "/properties/Source/properties/PublicationDate", 
+          "type": "string", 
+          "title": "The Publicationdate Schema.", 
+          "description": "An explanation about the purpose of this instance.", 
+          "default": "", 
+          "examples": [
+            "2017-11-15"
+          ]
+        }, 
+        "Publisher": {
+          "$id": "/properties/Source/properties/Publisher", 
+          "type": "array", 
+          "items": {
+            "$id": "/properties/Source/properties/Publisher/items", 
+            "type": "object", 
+            "properties": {
+              "name": {
+                "$id": "/properties/Source/properties/Publisher/items/properties/name", 
+                "type": "string", 
+                "title": "The Name Schema.", 
+                "description": "An explanation about the purpose of this instance.", 
+                "default": "", 
+                "examples": [
+                  "Monash University"
+                ]
+              }, 
+              "Identifier": {
+                "$id": "/properties/Source/properties/Publisher/items/properties/Identifier", 
+                "type": "object", 
+                "properties": {
+                  "ID": {
+                    "$id": "/properties/Source/properties/Publisher/items/properties/Identifier/properties/ID", 
+                    "type": "string", 
+                    "title": "The Id Schema.", 
+                    "description": "An explanation about the purpose of this instance.", 
+                    "default": "", 
+                    "examples": [
+                      "10.1016/j.ijmedinf.2009.08.006"
+                    ]
+                  }, 
+                  "IDScheme": {
+                    "$id": "/properties/Source/properties/Publisher/items/properties/Identifier/properties/IDScheme", 
+                    "type": "string", 
+                    "title": "The Idscheme Schema.", 
+                    "description": "An explanation about the purpose of this instance.", 
+                    "default": "", 
+                    "examples": [
+                      "doi"
+                    ]
+                  }, 
+                  "IDURL": {
+                    "$id": "/properties/Source/properties/Publisher/items/properties/Identifier/properties/IDURL", 
+                    "type": "string", 
+                    "title": "The Idurl Schema.", 
+                    "description": "An explanation about the purpose of this instance.", 
+                    "default": "", 
+                    "examples": [
+                      "https://www.ncbi.nlm.nih.gov/pubmed/19783203"
+                    ]
+                  }
+                }, 
+                "required": [
+                  "ID", 
+                  "IDScheme"
+                ]
+              }
+            }, 
+            "required": [
+              "name"
+            ]
+          }
+        }
+      }, 
+      "required": [
+        "Identifier", 
+        "Type"
+      ]
+    }, 
+    "Target": {
+      "$id": "/properties/Target", 
+      "type": "object", 
+      "properties": {
+        "Identifier": {
+          "$id": "/properties/Target/properties/Identifier", 
+          "type": "object", 
+          "properties": {
+            "ID": {
+              "$id": "/properties/Target/properties/Identifier/properties/ID", 
+              "type": "string", 
+              "title": "The Id Schema.", 
+              "description": "An explanation about the purpose of this instance.", 
+              "default": "", 
+              "examples": [
+                "10.1016/j.ijmedinf.2009.08.006"
+              ]
+            }, 
+            "IDScheme": {
+              "$id": "/properties/Target/properties/Identifier/properties/IDScheme", 
+              "type": "string", 
+              "title": "The Idscheme Schema.", 
+              "description": "An explanation about the purpose of this instance.", 
+              "default": "", 
+              "examples": [
+                "doi"
+              ]
+            }, 
+            "IDURL": {
+              "$id": "/properties/Target/properties/Identifier/properties/IDURL", 
+              "type": "string", 
+              "title": "The Idurl Schema.", 
+              "description": "An explanation about the purpose of this instance.", 
+              "default": "", 
+              "examples": [
+                "https://www.ncbi.nlm.nih.gov/pubmed/19783203"
+              ]
+            }
+          }, 
+          "required": [
+            "ID", 
+            "IDScheme"
+          ]
+        }, 
+        "Type": {
+          "$id": "/properties/Target/properties/Type", 
+          "type": "object", 
+          "properties": {
+            "Name": {
+              "$id": "/properties/Target/properties/Type/properties/Name", 
+              "type": "string", 
+              "enum": [
+                "literature", 
+                "dataset",
+                "unknwon"
+              ], 
+              "title": "The Name Schema.", 
+              "description": "An explanation about the purpose of this instance.", 
+              "default": "", 
+              "examples": [
+                "publication"
+              ]
+            }, 
+            "SubType": {
+              "$id": "/properties/Target/properties/Type/properties/SubType", 
+              "type": "string", 
+              "title": "The Subtype Schema.", 
+              "description": "An explanation about the purpose of this instance.", 
+              "default": "", 
+              "examples": [
+                "journal article"
+              ]
+            }, 
+            "SubTypeSchema": {
+              "$id": "/properties/Target/properties/Type/properties/SubTypeSchema", 
+              "type": "string", 
+              "title": "The Subtypeschema Schema.", 
+              "description": "An explanation about the purpose of this instance.", 
+              "default": "", 
+              "examples": [
+                "CASRAI"
+              ]
+            }
+          }, 
+          "required": [
+            "Name"
+          ]
+        }, 
+        "Title": {
+          "$id": "/properties/Target/properties/Title", 
+          "type": "array", 
+          "items": {
+            "$id": "/properties/Target/properties/Title/items", 
+            "type": "string", 
+            "title": "The 0 Schema.", 
+            "description": "An explanation about the purpose of this instance.", 
+            "default": "", 
+            "examples": [
+              "A Title"
+            ]
+          }
+        }, 
+        "Creator": {
+          "$id": "/properties/Target/properties/Creator", 
+          "type": "array", 
+          "items": {
+            "$id": "/properties/Target/properties/Creator/items", 
+            "type": "object", 
+            "properties": {
+              "Name": {
+                "$id": "/properties/Target/properties/Creator/items/properties/Name", 
+                "type": "string", 
+                "title": "The Name Schema.", 
+                "description": "An explanation about the purpose of this instance.", 
+                "default": "", 
+                "examples": [
+                  "Dr Fernando"
+                ]
+              }, 
+              "Identifier": {
+                "$id": "/properties/Target/properties/Creator/items/properties/Identifier", 
+                "type": "object", 
+                "properties": {
+                  "ID": {
+                    "$id": "/properties/Target/properties/Creator/items/properties/Identifier/properties/ID", 
+                    "type": "string", 
+                    "title": "The Id Schema.", 
+                    "description": "An explanation about the purpose of this instance.", 
+                    "default": "", 
+                    "examples": [
+                      "10.1016/j.ijmedinf.2009.08.006"
+                    ]
+                  }, 
+                  "IDScheme": {
+                    "$id": "/properties/Target/properties/Creator/items/properties/Identifier/properties/IDScheme", 
+                    "type": "string", 
+                    "title": "The Idscheme Schema.", 
+                    "description": "An explanation about the purpose of this instance.", 
+                    "default": "", 
+                    "examples": [
+                      "doi"
+                    ]
+                  }, 
+                  "IDURL": {
+                    "$id": "/properties/Target/properties/Creator/items/properties/Identifier/properties/IDURL", 
+                    "type": "string", 
+                    "title": "The Idurl Schema.", 
+                    "description": "An explanation about the purpose of this instance.", 
+                    "default": "", 
+                    "examples": [
+                      "https://www.ncbi.nlm.nih.gov/pubmed/19783203"
+                    ]
+                  }
+                }, 
+                "required": [
+                  "ID", 
+                  "IDScheme"
+                ]
+              }
+            }, 
+            "required": [
+              "Name"
+            ]
+          }
+        }, 
+        "PublicationDate": {
+          "$id": "/properties/Target/properties/PublicationDate", 
+          "type": "string", 
+          "title": "The Publicationdate Schema.", 
+          "description": "An explanation about the purpose of this instance.", 
+          "default": "", 
+          "examples": [
+            "2017-11-15"
+          ]
+        }, 
+        "Publisher": {
+          "$id": "/properties/Target/properties/Publisher", 
+          "type": "array", 
+          "items": {
+            "$id": "/properties/Target/properties/Publisher/items", 
+            "type": "object", 
+            "properties": {
+              "name": {
+                "$id": "/properties/Target/properties/Publisher/items/properties/name", 
+                "type": "string", 
+                "title": "The Name Schema.", 
+                "description": "An explanation about the purpose of this instance.", 
+                "default": "", 
+                "examples": [
+                  "Monash University"
+                ]
+              }, 
+              "Identifier": {
+                "$id": "/properties/Target/properties/Publisher/items/properties/Identifier", 
+                "type": "object", 
+                "properties": {
+                  "ID": {
+                    "$id": "/properties/Target/properties/Publisher/items/properties/Identifier/properties/ID", 
+                    "type": "string", 
+                    "title": "The Id Schema.", 
+                    "description": "An explanation about the purpose of this instance.", 
+                    "default": "", 
+                    "examples": [
+                      "10.1016/j.ijmedinf.2009.08.006"
+                    ]
+                  }, 
+                  "IDScheme": {
+                    "$id": "/properties/Target/properties/Publisher/items/properties/Identifier/properties/IDScheme", 
+                    "type": "string", 
+                    "title": "The Idscheme Schema.", 
+                    "description": "An explanation about the purpose of this instance.", 
+                    "default": "", 
+                    "examples": [
+                      "doi"
+                    ]
+                  }, 
+                  "IDURL": {
+                    "$id": "/properties/Target/properties/Publisher/items/properties/Identifier/properties/IDURL", 
+                    "type": "string", 
+                    "title": "The Idurl Schema.", 
+                    "description": "An explanation about the purpose of this instance.", 
+                    "default": "", 
+                    "examples": [
+                      "https://www.ncbi.nlm.nih.gov/pubmed/19783203"
+                    ]
+                  }
+                }, 
+                "required": [
+                  "ID", 
+                  "IDScheme"
+                ]
+              }
+            }, 
+            "required": [
+              "name"
+            ]
+          }
+        }
+      }, 
+      "required": [
+        "Identifier", 
+        "Type"
+      ]
+    }
+  }, 
+  "required": [
+    "LinkPublicationDate", 
+    "LinkProvider", 
+    "RelationshipType", 
+    "Source", 
+    "Target"
+  ]
+}
