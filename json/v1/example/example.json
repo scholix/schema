@@ -1,0 +1,107 @@
+{
+    "link": {
+        "publicationDate": "2006-05-04",
+        "publisher": {
+            "name": "publisher",
+            "identifier": [{
+                "identifier": "id1",
+                "schema": "schema1"
+            }, {
+                "identifier": "id2",
+                "schema": "schema2"
+            }]
+        },
+        "linkProvider": {
+            "name": "nameProvider",
+            "identifier": [{
+                "identifier": "id1",
+                "schema": "schema1"
+            }, {
+                "identifier": "id2",
+                "schema": "schema2"
+            }]
+        },
+        "relationship": [{
+            "name": "cite",
+            "schema": "datacite",
+            "inverse": "isCitedBy"
+        }, {
+            "name": "cite1",
+            "schema": "datacite1",
+            "inverse": "isCitedBy1"
+        }],
+        "source": {
+            "identifier": [{
+                "identifier": "id1",
+                "schema": "schema1"
+            }, {
+                "identifier": "id2",
+                "schema": "schema2"
+            }],
+            "objectType": "dataset",
+            "objectSubType": "table",
+            "title": "title 0",
+            "creator": [{
+                "name": "Sandro La Bruzzo",
+                "identifier": {
+                    "identifier": "id1",
+                    "schema": "schema1"
+                }
+            }, {
+                "name": "Paolo Manghi",
+                "identifier": {
+                    "identifier": "id1",
+                    "schema": "schema1"
+                }
+            }],
+            "publicationDate": "2006-05-04",
+            "publisher": {
+                "name": "publisher",
+                "identifier": [{
+                    "identifier": "id1",
+                    "schema": "schema1"
+                }, {
+                    "identifier": "id2",
+                    "schema": "schema2"
+                }]
+            }
+        },
+
+        "target": {
+            "identifier": [{
+                "identifier": "id1",
+                "schema": "schema1"
+            }, {
+                "identifier": "id2",
+                "schema": "schema2"
+            }],
+            "objectType": "publication",
+            "objectSubType": "article",
+            "title": "title 0",
+            "creator": [{
+                "name": "Sandro La Bruzzo",
+                "identifier": {
+                    "identifier": "id1",
+                    "schema": "schema1"
+                }
+            }, {
+                "name": "Paolo Manghi",
+                "identifier": {
+                    "identifier": "id1",
+                    "schema": "schema1"
+                }
+            }],
+            "publicationDate": "2006-05-04",
+            "publisher": {
+                "name": "publisher",
+                "identifier": [{
+                    "identifier": "id1",
+                    "schema": "schema1"
+                }, {
+                    "identifier": "id2",
+                    "schema": "schema2"
+                }]
+            }
+        }
+    }
+}
