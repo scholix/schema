@@ -6,7 +6,7 @@
   "definitions": {
     "IdentifierType": {
       "type": "object",
-      "description": "Identifier of an object (paper, dataset, person or organization), e.g.: DOI, URL, ISBN, etc.",
+      "description": "Identifier of an object (paper, dataset, person or organization), e.g.: DOI, URL, ISBN, ORCID etc.",
       "additionalProperties": false,
       "properties": {
         "ID": {

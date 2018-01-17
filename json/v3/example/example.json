@@ -22,7 +22,7 @@
       "Identifier": {
          "ID": "10.1016/j.ijmedinf.2009.08.006",
          "IDScheme": "doi",
-         "IDURL": "https://www.ncbi.nlm.nih.gov/pubmed/19783203"
+         "IDURL": "https://doi.org/10.1016/j.ijmedinf.2009.08.006"
       },
       "Type": {
          "Name": "literature",
@@ -35,9 +35,9 @@
             "Name": "Dr Juanita Fernando",
             "Identifier": [
                {
-                  "ID": "10.1016/j.ijmedinf.2009.08.006",
-                  "IDScheme": "doi",
-                  "IDURL": "https://www.ncbi.nlm.nih.gov/pubmed/19783203"
+                  "ID": "0000-0002-1825-0097",
+                  "IDScheme": "orcid",
+                  "IDURL": "https://orcid.org/0000-0002-1825-0097"
                }
             ]
          },
@@ -45,9 +45,9 @@
             "Name": "Dr Juanita Fernando",
             "Identifier": [
                {
-                  "ID": "10.1016/j.ijmedinf.2009.08.006",
-                  "IDScheme": "doi",
-                  "IDURL": "https://www.ncbi.nlm.nih.gov/pubmed/19783203"
+                  "ID": "0000-0002-1825-0097",
+                  "IDScheme": "orcid",
+                  "IDURL": "https://orcid.org/0000-0002-1825-0097"
                }
             ]
          }
@@ -60,7 +60,7 @@
                {
                   "ID": "10.1016/j.ijmedinf.2009.08.006",
                   "IDScheme": "doi",
-                  "IDURL": "https://www.ncbi.nlm.nih.gov/pubmed/19783203"
+                  "IDURL": "https://doi.org/10.1016/j.ijmedinf.2009.08.006"
                }
             ]
          }
@@ -70,7 +70,7 @@
       "Identifier": {
          "ID": "10.1016/j.ijmedinf.2009.08.006",
          "IDScheme": "doi",
-         "IDURL": "https://www.ncbi.nlm.nih.gov/pubmed/19783203"
+         "IDURL": "https://doi.org/10.1016/j.ijmedinf.2009.08.006"
       },
       "Type": {
          "Name": "literature",
@@ -83,9 +83,9 @@
             "Name": "Dr Juanita Fernando",
             "Identifier": [
                {
-                  "ID": "10.1016/j.ijmedinf.2009.08.006",
-                  "IDScheme": "doi",
-                  "IDURL": "https://www.ncbi.nlm.nih.gov/pubmed/19783203"
+                  "ID": "0000-0002-1825-0097",
+                  "IDScheme": "orcid",
+                  "IDURL": "https://orcid.org/0000-0002-1825-0097"
                }
             ]
          },
@@ -93,9 +93,9 @@
             "Name": "Dr Juanita Fernando",
             "Identifier": [
                {
-                  "ID": "10.1016/j.ijmedinf.2009.08.006",
-                  "IDScheme": "doi",
-                  "IDURL": "https://www.ncbi.nlm.nih.gov/pubmed/19783203"
+                  "ID": "0000-0002-1825-0097",
+                  "IDScheme": "orcid",
+                  "IDURL": "https://orcid.org/0000-0002-1825-0097"
                }
             ]
          }
@@ -108,7 +108,7 @@
                {
                   "ID": "10.1016/j.ijmedinf.2009.08.006",
                   "IDScheme": "doi",
-                  "IDURL": "https://www.ncbi.nlm.nih.gov/pubmed/19783203"
+                  "IDURL": "https://doi.org/10.1016/j.ijmedinf.2009.08.006"
                }
             ]
          }
