@@ -1,108 +1,116 @@
-{  
-   "LinkPublicationDate":"2017-11-15",
-   "LinkProvider":[  
-      {  
-         "name":"Datasets in Datacite",
-         "identifier":[  
-            {  
-               "ID":"dli_________::datacite",
-               "IDScheme":"dnetIdentifier",
-               "IDURL":"https://www.datacite.org/"
+{
+   "LinkPublicationDate": "2017-11-15",
+   "LinkProvider": [
+      {
+         "Name": "Datasets in Datacite",
+         "Identifier": [
+            {
+               "ID": "dli_________::datacite",
+               "IDScheme": "dnetIdentifier",
+               "IDURL": "https://www.datacite.org/"
             }
          ]
       }
    ],
-   "RelationshipType":{  
-      "Name":"IsRelatedTo",
-      "SubType":"isPreviousVersionOf",
-      "SubTypeSchema":"https://schema.datacite.org/meta/kernel-4.0/metadata.xsd"      
-   },   
+   "RelationshipType": {
+      "Name": "IsRelatedTo",
+      "SubType": "isPreviousVersionOf",
+      "SubTypeSchema": "https://schema.datacite.org/meta/kernel-4.0/metadata.xsd"
+   },
    "LicenseURL": "http://creativecommons.org/publicdomain/zero/1.0",
-    "Source":{  
-      "Identifier":{  
-         "ID":"10.1016/j.ijmedinf.2009.08.006",
-         "IDScheme":"doi",
+   "Source": {
+      "Identifier": {
+         "ID": "10.1016/j.ijmedinf.2009.08.006",
+         "IDScheme": "doi",
          "IDURL": "https://www.ncbi.nlm.nih.gov/pubmed/19783203"
       },
-      "Type":{  
-         "Name":"publication",
-         "SubType":"journal article",
-         "SubTypeSchema":"CASRAI"
+      "Type": {
+         "Name": "literature",
+         "SubType": "journal article",
+         "SubTypeSchema": "CASRAI"
       },
-      "Title":"The health information system security threat lifecycle: an informatics theory.",
-      "Creator":[  
-         {  
-            "Name":"Dr Juanita Fernando",
-            "Identifier":{  
-                 "ID":"10.1016/j.ijmedinf.2009.08.006",
-                 "IDScheme":"doi",
-                 "IDURL": "https://www.ncbi.nlm.nih.gov/pubmed/19783203"
-              }
-
+      "Title": "The health information system security threat lifecycle: an informatics theory.",
+      "Creator": [
+         {
+            "Name": "Dr Juanita Fernando",
+            "Identifier": [
+               {
+                  "ID": "10.1016/j.ijmedinf.2009.08.006",
+                  "IDScheme": "doi",
+                  "IDURL": "https://www.ncbi.nlm.nih.gov/pubmed/19783203"
+               }
+            ]
          },
-         {  
-            "Name":"Dr Juanita Fernando",
-            "Identifier":{  
-                 "ID":"10.1016/j.ijmedinf.2009.08.006",
-                 "IDScheme":"doi",
-                 "IDURL": "https://www.ncbi.nlm.nih.gov/pubmed/19783203"
-              }
-
+         {
+            "Name": "Dr Juanita Fernando",
+            "Identifier": [
+               {
+                  "ID": "10.1016/j.ijmedinf.2009.08.006",
+                  "IDScheme": "doi",
+                  "IDURL": "https://www.ncbi.nlm.nih.gov/pubmed/19783203"
+               }
+            ]
          }
       ],
-      "PublicationDate":"2017-11-15",
-      "Publisher":[  
-         {  
-            "name":"Monash University",
-             "Identifier":{  
-                 "ID":"10.1016/j.ijmedinf.2009.08.006",
-                 "IDScheme":"doi",
-                 "IDURL": "https://www.ncbi.nlm.nih.gov/pubmed/19783203"
-              }
+      "PublicationDate": "2017-11-15",
+      "Publisher": [
+         {
+            "Name": "Monash University",
+            "Identifier": [
+               {
+                  "ID": "10.1016/j.ijmedinf.2009.08.006",
+                  "IDScheme": "doi",
+                  "IDURL": "https://www.ncbi.nlm.nih.gov/pubmed/19783203"
+               }
+            ]
          }
       ]
    },
-   "Target":{  
-      "Identifier":{  
-         "ID":"10.1016/j.ijmedinf.2009.08.006",
-         "IDScheme":"doi",
+   "Target": {
+      "Identifier": {
+         "ID": "10.1016/j.ijmedinf.2009.08.006",
+         "IDScheme": "doi",
          "IDURL": "https://www.ncbi.nlm.nih.gov/pubmed/19783203"
       },
-      "Type":{  
-         "Name":"publication",
-         "SubType":"journal article",
-         "SubTypeSchema":"CASRAI"
+      "Type": {
+         "Name": "literature",
+         "SubType": "journal article",
+         "SubTypeSchema": "CASRAI"
       },
-      "Title":"The health information system security threat lifecycle: an informatics theory.",
-      "Creator":[  
-         {  
-            "Name":"Dr Juanita Fernando",
-            "Identifier":{  
-                 "ID":"10.1016/j.ijmedinf.2009.08.006",
-                 "IDScheme":"doi",
-                 "IDURL": "https://www.ncbi.nlm.nih.gov/pubmed/19783203"
-              }
-
+      "Title": "The health information system security threat lifecycle: an informatics theory.",
+      "Creator": [
+         {
+            "Name": "Dr Juanita Fernando",
+            "Identifier": [
+               {
+                  "ID": "10.1016/j.ijmedinf.2009.08.006",
+                  "IDScheme": "doi",
+                  "IDURL": "https://www.ncbi.nlm.nih.gov/pubmed/19783203"
+               }
+            ]
          },
-         {  
-            "Name":"Dr Juanita Fernando",
-            "Identifier":{  
-                 "ID":"10.1016/j.ijmedinf.2009.08.006",
-                 "IDScheme":"doi",
-                 "IDURL": "https://www.ncbi.nlm.nih.gov/pubmed/19783203"
-              }
-
+         {
+            "Name": "Dr Juanita Fernando",
+            "Identifier": [
+               {
+                  "ID": "10.1016/j.ijmedinf.2009.08.006",
+                  "IDScheme": "doi",
+                  "IDURL": "https://www.ncbi.nlm.nih.gov/pubmed/19783203"
+               }
+            ]
          }
       ],
-      "PublicationDate":"2017-11-15",
-      "Publisher":[  
-         {  
-            "name":"Monash University",
-             "Identifier":{  
-                 "ID":"10.1016/j.ijmedinf.2009.08.006",
-                 "IDScheme":"doi",
-                 "IDURL": "https://www.ncbi.nlm.nih.gov/pubmed/19783203"
-              }
+      "PublicationDate": "2017-11-15",
+      "Publisher": [
+         {
+            "Name": "Monash University",
+            "Identifier": [
+               {
+                  "ID": "10.1016/j.ijmedinf.2009.08.006",
+                  "IDScheme": "doi",
+                  "IDURL": "https://www.ncbi.nlm.nih.gov/pubmed/19783203"
+               }
+            ]
          }
       ]
    }
