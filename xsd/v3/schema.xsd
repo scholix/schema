@@ -19,7 +19,7 @@
                 </xs:annotation>
             </xs:element>
             
-            <xs:element minOccurs="1" maxOccurs="1" name="LinkProvider" type="scholix:providerType">
+            <xs:element minOccurs="1" maxOccurs="unbounded" name="LinkProvider" type="scholix:providerType">
                 <xs:annotation>
                     <xs:documentation>
                         An entity responsible for making the link available
